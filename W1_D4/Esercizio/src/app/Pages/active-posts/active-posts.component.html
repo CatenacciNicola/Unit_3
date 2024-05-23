@@ -5,6 +5,9 @@
       <div class="card-body">
         <h5 class="card-title">{{ p.title }}</h5>
         <p class="card-text">{{ p.body }}</p>
+        <a class="btn btn-success" [routerLink]="['/details', p.id]"
+          >Dettagli</a
+        >
       </div>
     </div>
   </div>
