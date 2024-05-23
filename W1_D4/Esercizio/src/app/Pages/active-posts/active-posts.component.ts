@@ -23,7 +23,7 @@ export class ActivePostsComponent {
 
     console.log("Tutti i posts",postsArr)
     this.activeArr=postsArr.filter(post=>post.active===true)
-
+    console.log("Post attivi", this.activeArr)
   }
 
 }
