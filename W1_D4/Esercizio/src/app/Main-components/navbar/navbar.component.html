@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <!--BOTTONE-->
+
+    <button
+      (click)="show = !show"
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--MENU A SCOMPARSA-->
+
+    <div class="collapse navbar-collapse" [ngClass]="{ show: show }">
+      <div class="navbar-nav">
+        <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+        <a class="nav-link" routerLink="/active-post" routerLinkActive="active"
+          >Active Posts</a
+        >
+        <a
+          class="nav-link"
+          routerLink="/inactive-post"
+          routerLinkActive="active"
+          >Inactive Posts</a
+        >
+      </div>
+    </div>
+  </div>
+</nav>
